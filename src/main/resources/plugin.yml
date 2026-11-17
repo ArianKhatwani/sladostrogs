@@ -1,0 +1,24 @@
+name: ChaosSMP
+version: '${version}'
+main: ru.chaossmp.ChaosSMP
+api-version: '1.21'
+authors: [ChaosSMP]
+description: PvP-focused Vanilla++ SMP systems: stats, leaderboards and spawn.
+commands:
+  setspawn:
+    description: Set the server spawn.
+    usage: /setspawn
+    permission: chaossmp.setspawn
+  spawn:
+    description: Teleport to the server spawn.
+    usage: /spawn
+  stats:
+    description: Show player statistics.
+    usage: /stats [player]
+  top:
+    description: Show server leaderboards.
+    usage: /top [kills|deaths|streak|playtime]
+permissions:
+  chaossmp.setspawn:
+    description: Allows setting the server spawn.
+    default: op

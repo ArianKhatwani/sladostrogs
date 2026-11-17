@@ -1,0 +1,31 @@
+# ChaosSMP 0.1.0
+spawn:
+  teleport-delay-seconds: 5
+  combat-tag-seconds: 15
+  # A player is considered to have moved if their position changes during the countdown.
+  cancel-on-move: true
+
+leaderboards:
+  enabled: true
+  refresh-seconds: 30
+  entries: 10
+  # Four boards are placed around the spawn when /setspawn is used.
+  # Offsets are relative to the spawn location (x, z).
+  boards:
+    kills:   { x: 5.0, z: 0.0, yaw: 90.0 }
+    deaths:  { x: -5.0, z: 0.0, yaw: -90.0 }
+    streak:  { x: 0.0, z: 5.0, yaw: 180.0 }
+    playtime:{ x: 0.0, z: -5.0, yaw: 0.0 }
+
+messages:
+  prefix: '&8[&bChaosSMP&8] '
+  no-spawn: '&cТочка спавна ещё не установлена.'
+  set-spawn: '&aТочка спавна успешно установлена.'
+  teleport-start: '&eТелепортация через &f{seconds} &eсекунд. Не двигайтесь!'
+  teleport-success: '&aВы телепортированы на спавн.'
+  teleport-cancel-move: '&cТелепортация отменена: вы двигались.'
+  teleport-cancel-damage: '&cТелепортация отменена: вы получили урон.'
+  combat-block: '&cНельзя телепортироваться во время PvP-боя.'
+  only-player: '&cЭта команда доступна только игроку.'
+  no-permission: '&cУ вас нет прав.'
+  player-not-found: '&cИгрок не найден.'
